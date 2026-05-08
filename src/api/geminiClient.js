@@ -1,6 +1,6 @@
 // Google Gemini API Integration
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models';
+const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models';
 
 export const geminiClient = {
   /**
@@ -16,7 +16,7 @@ export const geminiClient = {
 
     try {
       const response = await fetch(
-        `${GEMINI_API_URL}/gemini-1.5-pro-latest:generateContent?key=${GEMINI_API_KEY}`,
+        `${GEMINI_API_URL}/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
@@ -108,7 +108,7 @@ export const geminiClient = {
       }
 
       const response = await fetch(
-        `${GEMINI_API_URL}/gemini-1.5-pro-latest:generateContent?key=${GEMINI_API_KEY}`,
+        `${GEMINI_API_URL}/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
