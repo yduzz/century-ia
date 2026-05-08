@@ -16,7 +16,7 @@ export const geminiClient = {
 
     try {
       const response = await fetch(
-        `${GEMINI_API_URL}/gemini-pro:generateContent?key=${GEMINI_API_KEY}`,
+        `${GEMINI_API_URL}/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
@@ -108,7 +108,7 @@ export const geminiClient = {
       }
 
       const response = await fetch(
-        `${GEMINI_API_URL}/gemini-pro-vision:generateContent?key=${GEMINI_API_KEY}`,
+        `${GEMINI_API_URL}/gemini-1.5-pro:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: {
