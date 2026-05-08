@@ -52,8 +52,16 @@
      - `VITE_BASE44_APP_ID` = seu_app_id
      - `VITE_BASE44_FUNCTIONS_VERSION` = v1
      - `VITE_BASE44_APP_BASE_URL` = https://api.base44.com
+     - `VITE_GEMINI_API_KEY` = sua_chave_gemini_gratuita
      - `VITE_VERCEL_CLIENT_ID` = seu_client_id (se usar login Vercel)
      - `VITE_VERCEL_REDIRECT_URI` = https://seu-dominio.vercel.app/auth/vercel/callback
+
+### 5a. **Obter Chave da API Gemini (GRATUITA)**
+   - Acesse [Google AI Studio](https://aistudio.google.com/app/apikeys)
+   - Clique em "Create API Key"
+   - A chave será gerada automaticamente
+   - **Limite gratuito:** 60 requisições/minuto, 1.500/dia
+   - Copie a chave e adicione como `VITE_GEMINI_API_KEY` no Vercel
 
 ### 6. **Deploy**
    - Clique em "Deploy"
